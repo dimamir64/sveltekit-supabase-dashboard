@@ -13,7 +13,7 @@
 			/></svg
 		>
 		<span
-			><a href="https://daisyui.com/components/table/">DaisyUI</a> table example with static data</span
+			><a href="https://daisyui.com/components/table/">DaisyUI</a> пример таблицы статических данных</span
 		>
 	</div>
 </div>
@@ -29,9 +29,9 @@
 							<input type="checkbox" class="checkbox" />
 						</label>
 					</th>
-					<th>Name</th>
-					<th>Job</th>
-					<th>Favorite Color</th>
+					<th>Имя</th>
+					<th>Место работы</th>
+					<th>Любимый цвет</th>
 					<th />
 				</tr>
 			</thead>
@@ -173,9 +173,9 @@
 			<tfoot>
 				<tr>
 					<th />
-					<th>Name</th>
-					<th>Job</th>
-					<th>Favorite Color</th>
+					<th>Имя</th>
+					<th>Место работы</th>
+					<th>Любимый цвет</th>
 					<th />
 				</tr>
 			</tfoot>

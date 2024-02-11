@@ -6,7 +6,7 @@
 	const columns = [
 		{
 			key: 'timestamp',
-			title: 'Timestamp',
+			title: 'Время',
 			value: (v: any) => v.timestamp,
 			sortable: true,
 			renderComponent: {
@@ -16,13 +16,13 @@
 		},
 		{
 			key: 'user',
-			title: 'User',
+			title: 'Пользователь',
 			value: (v: any) => v.user?.email ?? '',
 			sortable: true
 		},
 		{
 			key: 'event',
-			title: 'Event',
+			title: 'Событие',
 			value: (v: any) => JSON.stringify(v.event),
 			sortable: true
 		}

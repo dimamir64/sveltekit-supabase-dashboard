@@ -11,9 +11,9 @@
 					<input type="checkbox" class="checkbox" />
 				</label>
 			</th>
-			<th>Name</th>
-			<th>Job</th>
-			<th>Favorite Color</th>
+			<th>Имя</th>
+			<th>Место работы</th>
+			<th>Любимый цвет</th>
 			<th />
 		</tr>
 	</thead>
@@ -47,7 +47,7 @@
 				</td>
 				<td>{user.eyeColor}</td>
 				<th>
-					<label for="user-modal" class="btn btn-primary btn-xs modal-button">details</label>
+					<label for="user-modal" class="btn btn-primary btn-xs modal-button">подробно</label>
 					<!-- <button class="btn btn-primary btn-xs">details</button> -->
 				</th>
 			</tr>
@@ -57,9 +57,9 @@
 	<tfoot>
 		<tr>
 			<th />
-			<th>Name</th>
-			<th>Job</th>
-			<th>Favorite Color</th>
+			<th>Имя</th>
+			<th>Место работы</th>
+			<th>Любимый цвет</th>
 			<th />
 		</tr>
 	</tfoot>
@@ -69,12 +69,10 @@
 <input type="checkbox" id="user-modal" class="modal-toggle" />
 <div class="modal">
 	<div class="modal-box w-11/12 max-w-5xl">
-		<h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-		<p class="py-4">
-			You've been selected for a chance to get one year of subscription to use Wikipedia for free!
-		</p>
+		<h3 class="font-bold text-lg">Заготовка формы Подробно !</h3>
+		<p class="py-4">TODO! Сформировать!</p>
 		<div class="modal-action">
-			<label for="user-modal" class="btn">Yay!</label>
+			<label for="user-modal" class="btn">Выйти!</label>
 		</div>
 	</div>
 </div>

@@ -7,7 +7,7 @@
 	<title>{$page.url.hostname}</title>
 	<link rel="icon" type="image/x-icon" href={`/${$page.url.hostname}/favicon.ico`} />
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1TGFG0V29"></script>
+	<!--	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1TGFG0V29"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() {
@@ -16,6 +16,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-J1TGFG0V29');
 	</script>
+	-->
 </svelte:head>
 
 <slot />

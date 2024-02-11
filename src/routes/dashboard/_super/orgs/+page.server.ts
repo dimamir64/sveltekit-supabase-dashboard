@@ -36,12 +36,12 @@ export const actions: Actions = {
 			return fail(400, { error: res.error.details });
 		}
 
-		return { success: `Organization ${name} created succesfully` };
+		return { success: `Организация ${name} успешно создана` };
 	},
 
 	delete: async ({ request, locals: { supabase } }) => {
 		if (PUBLIC_DEMO_MODE == 'true') {
-			return { error: 'ORGANIZATION DELETE DISABLED IN DEMO MODE!' };
+			return { error: 'Удаление организации в демо-режиме запрещено!' };
 		}
 
 		// console.log('deleting org')
@@ -58,6 +58,6 @@ export const actions: Actions = {
 			return fail(400, { error: res.error.message });
 		}
 
-		return { success: 'Organization deleted succesfully' };
+		return { success: 'Организация успешно удалена' };
 	}
 };

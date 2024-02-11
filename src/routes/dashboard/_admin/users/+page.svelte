@@ -63,7 +63,7 @@
 {#if view == 'home'}
 	<DashboardPage>
 		<span slot="icon"><UsersIcon /></span>
-		<span slot="title">Users</span>
+		<span slot="title">Пользователи системы</span>
 
 		<span slot="actions">
 			<ActionButton
@@ -90,10 +90,10 @@
 {:else if (view = 'add')}
 	<DashboardPage>
 		<span slot="icon"> <PlusIcon /></span>
-		<span slot="title"> Add user </span>
+		<span slot="title"> Добавить нового </span>
 		<span slot="actions">
 			<ActionButton
-				text="CANCEL"
+				text="Отмена"
 				onAction={() => {
 					view = 'home';
 				}}
@@ -122,9 +122,9 @@
 				{#if roleSuper(data.session)}
 					<div class="form-control mt-5">
 						<label class="input-group">
-							<span class="w-1/5 text-xl bg-primary">Organization</span>
+							<span class="w-1/5 text-xl bg-primary">Организация</span>
 							<select id="org" name="org" class="select select-bordered w-4/5">
-								<option disabled selected>Organization</option>
+								<option disabled selected>Организация</option>
 								{#each data.orgs as org}
 									<option value={JSON.stringify(org)} class="block w-full">{org.name}</option>
 								{/each}
@@ -135,10 +135,10 @@
 
 				<div class="form-control mt-5">
 					<label class="input-group">
-						<span class="w-1/5 text-xl bg-primary">Role</span>
+						<span class="w-1/5 text-xl bg-primary">Роль</span>
 						<select id="role" name="role" class="w-4/5 select select-bordered">
-							<option disabled selected>Role</option>
-							<option value="user">User</option>
+							<option disabled selected>Роль</option>
+							<option value="user">Простой</option>
 							<option value="admin">Admin</option>
 							{#if roleSuper(data.session)}
 								<option value="super">Super</option>
@@ -149,14 +149,14 @@
 
 				<div class="form-control mt-5">
 					<label class="input-group">
-						<span class="w-1/5 text-xl bg-primary">Password</span>
+						<span class="w-1/5 text-xl bg-primary">Пароль</span>
 						<input
 							autocomplete="current-password"
 							id="password"
 							name="password"
 							class="w-4/5 input input-bordered"
 							type="password"
-							placeholder="enter password"
+							placeholder="ввести пароль"
 							required
 						/>
 					</label>
@@ -164,21 +164,21 @@
 
 				<div class="form-control mt-5">
 					<label class="input-group">
-						<span class="w-1/5 text-xl bg-primary">Confirm</span>
+						<span class="w-1/5 text-xl bg-primary">Подтвердить</span>
 						<input
 							autocomplete="current-password"
 							id="password"
 							name="password"
 							class="w-4/5 input input-bordered"
 							type="password"
-							placeholder="confirm password"
+							placeholder="повторить ввод пароля"
 							required
 						/>
 					</label>
 				</div>
 
 				<div class="form-control mt-6">
-					<button class:btn-disabled={disabled} class="btn btn-primary">ADD USER</button>
+					<button class:btn-disabled={disabled} class="btn btn-primary">Новый</button>
 				</div>
 			</form>
 		</span>

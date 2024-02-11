@@ -7,12 +7,12 @@
 	export let data;
 
 	const action = () => {
-		toast.push('TOAST!', { classes: ['alert-success'] });
+		toast.push('Спасибо за понимание!', { classes: ['alert-success'] });
 	};
 </script>
 
 <svelte:head>
-	<title>Dashboard</title>
+	<title>Главная 2024</title>
 </svelte:head>
 
 <div class="alert alert-success shadow-lg mb-5">
@@ -29,13 +29,11 @@
 				d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 			/></svg
 		>
-		<span>Welcome to SvelteKit Supabase Dashboard!</span>
+		<span>Добро пожаловать в агрегатор поиска круизов!</span>
 	</div>
 	<div class="flex-none">
 		<!-- <button class="btn btn-sm btn-primary">OK</button> -->
-		<a class="btn btn-sm btn-primary" href="https://github.com/xulioc/sveltekit-supabase-dashboard"
-			>GITHUB</a
-		>
+		<a class="btn btn-sm btn-primary" href="https://river.sputnik-germes.ru/">river</a>
 	</div>
 </div>
 
@@ -47,39 +45,39 @@ ADMIN
 <div class="card flex-col bg-base-100 shadow-xl">
 	<div class="stats bg-primary text-primary-content">
 		<div class="stat">
-			<div class="stat-title">You are in</div>
+			<div class="stat-title">Вы находитесь Время</div>
 			<div class="stat-value">{data.location.region} ({data.location.country_name})</div>
 			<div class="stat-actions">
-				<button on:click={action} class="btn btn-sm btn-success">Yes I DO!</button>
+				<button on:click={action} class="btn btn-sm btn-success">Понятно!</button>
 			</div>
 		</div>
 
 		<div class="stat">
-			<div class="stat-title">Temperature in {data.location.city}</div>
+			<div class="stat-title">Температура в {data.location.city}</div>
 			<div class="stat-value">{data.weather.current_weather.temperature} ºC</div>
 			<div class="stat-actions">
-				<button class="btn btn-sm">i feel hot</button>
-				<button class="btn btn-sm">i feel cold</button>
+				<button class="btn btn-sm">Теплее</button>
+				<button class="btn btn-sm">Холоднее</button>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="card mt-5 p-3 bg-neutral shadow-xl">
-	<h1 class="text-center text-2xl font-bold">Temperature forecast at {data.location.city}</h1>
+	<h1 class="text-center text-2xl font-bold">Прогноз на неделю в {data.location.city}</h1>
 	<div><WeatherChart weather={data.weather} /></div>
 </div>
-
+<!--
 <div class="card flex-col lg:flex-row bg-base-200 shadow-xl mt-5">
 	<div class="hero">
 		<div class="hero-content flex-col lg:flex-row">
-			<!-- <img
+			 <img
 				alt="alt"
 				height="260"
 				width="260"
 				src="https://placeimg.com/260/260/arch"
 				class="max-w-sm rounded-lg shadow-2xl"
-			/> -->
+			/> 
 			<div>
 				<h1 class="text-5xl font-bold">Box Office News!</h1>
 				<p class="py-6">
@@ -91,7 +89,7 @@ ADMIN
 		</div>
 	</div>
 </div>
-
+-->
 <div class="carousel w-full mt-5">
 	<div id="item1" class="carousel-item w-full">
 		<img alt="" src="https://placeimg.com/800/200/arch" class="w-full" />

@@ -14,7 +14,7 @@
 		>
 			<div>
 				<AlertTriangleIcon />
-				<span>You are {role.toUpperCase()}!</span>
+				<span>Ваша роль {role.toUpperCase()}!</span>
 			</div>
 		</div>
 	{/if}

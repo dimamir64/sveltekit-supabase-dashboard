@@ -1,6 +1,6 @@
 # SvelteKit Supabase Dashboard (BETA)
 
-![alt text](/img/dashboard.png)
+![alt text](/src/img/dashboard.png)
 
 ---
 

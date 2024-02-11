@@ -16,10 +16,10 @@
 	<thead>
 		<tr>
 			<th>email</th>
-			<th>organization</th>
-			<th>role</th>
-			<th>created</th>
-			<th>last sign in</th>
+			<th>Организация</th>
+			<th>Роль</th>
+			<th>Создан</th>
+			<th>Последний вход</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -66,8 +66,8 @@
 		<form method="POST" action="?/delete">
 			<input name="user" value={current_user?.id} hidden />
 			<div class="modal-action">
-				<label for="delete-modal" class="btn">CANCEL</label>
-				<button class="btn btn-warning">DELETE</button>
+				<label for="delete-modal" class="btn">Отмена</label>
+				<button class="btn btn-warning">Удалить</button>
 			</div>
 		</form>
 	</div>

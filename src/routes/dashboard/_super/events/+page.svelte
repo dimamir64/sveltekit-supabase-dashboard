@@ -11,7 +11,7 @@
 
 <DashboardPage>
 	<span slot="icon"><ListIcon /></span>
-	<span slot="title">Events</span>
+	<span slot="title">События</span>
 	<span slot="actions" class="flex align-middle gap-1">
 		<ActionButton type="refresh" />
 	</span>

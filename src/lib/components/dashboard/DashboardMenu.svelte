@@ -40,36 +40,36 @@
 			</a>
 		</div>
 
-		<NavBarButton tooltip="Home" dest="/dashboard">
+		<NavBarButton tooltip="Начало" dest="/dashboard">
 			<span slot="icon"><HomeIcon /></span>
 		</NavBarButton>
 
-		<NavBarButton tooltip="Tables" dest="/dashboard/tables">
+		<NavBarButton tooltip="Таблицы" dest="/dashboard/tables">
 			<span slot="icon"><LayoutIcon /></span>
 		</NavBarButton>
 
-		<NavBarButton tooltip="Products" dest="/dashboard/products">
+		<NavBarButton tooltip="Продукты" dest="/dashboard/products">
 			<span slot="icon"><RadioIcon /></span>
 		</NavBarButton>
 
-		<NavBarButton tooltip="People" dest="/dashboard/people">
+		<NavBarButton tooltip="Люди" dest="/dashboard/people">
 			<span slot="icon"><UsersIcon /></span>
 		</NavBarButton>
 
 		<div class="max-md:my-0 divider" />
 
 		{#if isAdmin(role)}
-			<NavBarButton tooltip="Users" dest="/dashboard/_admin/users">
+			<NavBarButton tooltip="Пользователи" dest="/dashboard/_admin/users">
 				<span slot="icon"><UsersIcon class="stroke-warning" /></span>
 			</NavBarButton>
 			<div class="divider" />
 		{/if}
 
 		{#if isSuper(role)}
-			<NavBarButton tooltip="Organizations" dest="/dashboard/_super/orgs">
+			<NavBarButton tooltip="Организации" dest="/dashboard/_super/orgs">
 				<span slot="icon"><ArchiveIcon class="stroke-accent" /></span>
 			</NavBarButton>
-			<NavBarButton tooltip="Events" dest="/dashboard/_super/events">
+			<NavBarButton tooltip="События" dest="/dashboard/_super/events">
 				<span slot="icon"><ListIcon class="stroke-accent" /></span>
 			</NavBarButton>
 			<div class="max-md:my-0 divider" />
@@ -93,14 +93,14 @@
 				<li>
 					<div class="flex flex-row">
 						<a class="flex w-max" href="/dashboard/settings"
-							><SettingsIcon class="mr-4" />Settings</a
+							><SettingsIcon class="mr-4" />Настройки</a
 						>
 					</div>
 				</li>
 				<li>
 					<div class="flex flex-row">
 						<form action="/auth?/signout" method="POST">
-							<button class="flex w-max" type="submit"><LogOutIcon class="mr-4" />Sign Out</button>
+							<button class="flex w-max" type="submit"><LogOutIcon class="mr-4" />Выйти</button>
 						</form>
 					</div>
 				</li>

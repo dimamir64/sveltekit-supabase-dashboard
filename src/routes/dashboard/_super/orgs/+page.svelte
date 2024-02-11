@@ -58,7 +58,7 @@
 {#if view == 'home'}
 	<DashboardPage>
 		<span slot="icon"><ArchiveIcon /></span>
-		<span slot="title">Organizations</span>
+		<span slot="title">Организации</span>
 		<span slot="actions">
 			<button
 				class="btn btn-primary gap-2"
@@ -67,7 +67,7 @@
 				}}
 			>
 				<PlusIcon class="h-4 w-4" />
-				add org
+				Создать
 			</button>
 		</span>
 		<span slot="content" class="w-full">
@@ -77,12 +77,12 @@
 {:else if view == 'add'}
 	<DashboardPage>
 		<span slot="icon"><EditIcon /></span>
-		<span slot="title">Add organization</span>>
+		<span slot="title">Новая</span>>
 		<span slot="actions">
-			<!-- <button type="submit" form="user" class="btn btn-primary mx-2">
-				<SaveIcon class="mr-2 h-4 w-4" />
-				SAVE
-			</button> -->
+			<button type="submit" form="user" class="btn btn-primary mx-2">
+				<!--		<SaveIcon class="mr-2 h-4 w-4" />-->
+				Сохранить
+			</button>
 			<button
 				on:click={() => {
 					view = 'home';
@@ -90,7 +90,7 @@
 				class="btn btn-primary"
 			>
 				<XIcon class="mr-2 h-4 w-4" />
-				CANCEL
+				Отмена
 			</button>
 		</span>
 		<span slot="content" class="w-full">
@@ -98,21 +98,21 @@
 				<div class="form-control gap-y-3">
 					<div class="flex flex-row">
 						<label class="input-group w-full">
-							<span class="text-xl w-1/4 min-w-min bg-primary">Name</span>
+							<span class="text-xl w-1/4 min-w-min bg-primary">Наименование</span>
 							<input
 								autocomplete="name"
 								id="name"
 								name="name"
 								class="w-full input input-bordered"
 								type="text"
-								placeholder="Organization name"
+								placeholder="Наименование организации"
 								required
 							/>
 						</label>
 					</div>
 				</div>
 				<div class="form-control mt-6">
-					<button class="btn btn-primary">ADD ORGANIZATION</button>
+					<button class="btn btn-primary">Создать</button>
 				</div>
 			</form>
 		</span>

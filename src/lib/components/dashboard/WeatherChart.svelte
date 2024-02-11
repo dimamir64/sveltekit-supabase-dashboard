@@ -44,7 +44,7 @@
 	const data = {
 		datasets: [
 			{
-				label: 'Temperature',
+				label: 'Температура',
 				data: series,
 				// fill: false,
 				borderWidth: 2,

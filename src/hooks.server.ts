@@ -1,10 +1,27 @@
 import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { imAdmin, imSuper } from '$lib/utils';
+import * as Sentry from '@sentry/sveltekit';
+import { setupSidecar } from '@spotlightjs/spotlight/sidecar';
 import { createSupabaseServerClient } from '@supabase/auth-helpers-sveltekit';
 import type { Handle } from '@sveltejs/kit';
 import { redirect } from '@sveltejs/kit';
+import { sequence } from '@sveltejs/kit/hooks';
 
-export const handle: Handle = async ({ event, resolve }) => {
+Sentry.init({
+	dsn: '___DSN___',
+	tracesSampleRate: 1.0,
+	// ...your Sentry options
+	spotlight: import.meta.env.DEV
+});
+
+export const handleError = Sentry.handleErrorWithSentry();
+const handleSentry = Sentry.sentryHandle();
+
+if (import.meta.env.DEV) {
+	setupSidecar();
+}
+
+const handleSupabase: Handle = async ({ event, resolve }) => {
 	event.locals.supabase = createSupabaseServerClient({
 		supabaseUrl: PUBLIC_SUPABASE_URL,
 		supabaseKey: PUBLIC_SUPABASE_ANON_KEY,
@@ -86,3 +103,5 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	return ret;
 };
+
+export const handle = sequence(handleSentry, handleSupabase);

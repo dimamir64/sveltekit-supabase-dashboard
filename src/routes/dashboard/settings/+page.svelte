@@ -5,27 +5,27 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-	// console.log(data);
+	console.log(data);
 
 	const user = data.session?.user;
 </script>
 
 <DashboardPage>
 	<span slot="icon"><SettingsIcon /></span>
-	<span slot="title">Settings</span>
+	<span slot="title">Настройки</span>
 	<span slot="actions">
-		<ActionButton text="SAVE" form="edit" type="submit">
+		<ActionButton text="Сохранить" form="edit" type="submit">
 			<span slot="icon"><SaveIcon /></span>
 		</ActionButton>
 
-		<!-- <ActionButton
-			text="CANCEL"
+		<ActionButton
+			text="Отмена"
 			onAction={() => {
 				history.back();
 			}}
 		>
-			<span slot="icon"><XIcon /></span>
-		</ActionButton> -->
+			<!--<span slot="icon"><XIcon /></span>-->
+		</ActionButton>
 	</span>
 	<span slot="content">
 		<form id="edit" class="w-full max-w-sm" method="POST" action="?/save">
@@ -36,7 +36,7 @@
 				</label>
 
 				<label class="input-group pt-2">
-					<span class="md:w-1/3 mr-1">Organization</span>
+					<span class="md:w-1/3 mr-1">Организация</span>
 					<input
 						type="text"
 						value={user?.app_metadata.org.name}
@@ -46,7 +46,7 @@
 				</label>
 
 				<label class="input-group pt-2">
-					<span class="md:w-1/3 mr-1">Role</span>
+					<span class="md:w-1/3 mr-1">Роль</span>
 					<input
 						type="text"
 						value={user?.app_metadata.role}
@@ -55,15 +55,15 @@
 					/>
 				</label>
 
-				<!-- <label class="input-group pt-2 pb-5">
-					<span class="md:w-1/3 mr-1">User Name</span>
+				<label class="input-group pt-2 pb-5">
+					<span class="md:w-1/3 mr-1">Имя</span>
 					<input
 						type="text"
 						name="user_name"
 						value={user?.user_metadata.name}
 						class="input input-bordered md:w-2/3"
 					/>
-				</label> -->
+				</label>
 			</div>
 		</form>
 	</span>
