@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.pcss';
 	import { page } from '$app/stores';
 	import '../app.postcss';
 </script>

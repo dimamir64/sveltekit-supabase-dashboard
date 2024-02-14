@@ -15,27 +15,209 @@
 		</div>
 	</div>
 
-	<div class="hero min-h-fit my-5 bg-base-200">
-		<div class="hero-content text-center">
-			<div class="max-w-xl my-10">
-				<!-- <h1 class="text-4xl font-bold">Welcome to</h1> -->
-				<div class="container flex h-20 my-10 py-2 justify-center border-red-600">
-					<div class="flex w-1/2 border-red-600">
-						<div class="flex w-1/3 border-red-600">
-							<img alt="svelte" src="svelte.png" />
-						</div>
-						<div class="flex my-2 mx-2 border-red-600">
-							<img alt="svelte" src="sveltekit.svg" />
+	<div class="flex flex-col items-center px-5">
+		<div
+			class="flex gap-5 justify-between mt-8 text-lg leading-6 text-center whitespace-nowrap max-md:flex-wrap max-md:max-w-full"
+		>
+			<div class="grow font-bold text-cyan-600">Речные круизы по России и СНГ</div>
+			<div class="grow font-medium text-zinc-500">Морские круизы по зарубежью</div>
+		</div>
+		<div
+			class="flex flex-col self-stretch px-16 py-12 mt-6 w-full rounded-3xl bg-neutral-100 max-md:px-5 max-md:max-w-full"
+		>
+			<div class="max-md:max-w-full">
+				<div class="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+					<div class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+						<div class="flex flex-col text-base font-medium leading-6 max-md:mt-3.5">
+							<div class="flex gap-2 justify-between pr-3 text-neutral-800">
+								<div class="flex-auto">Дата отправления</div>
+								<img
+									loading="lazy"
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e484db04e09cdd654b885ac615fa8075890c680d42a1a3b16736b4dd543c1a6?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+									class="aspect-square w-[19px]"
+								/>
+							</div>
+							<div class="flex gap-3 justify-between mt-3">
+								<div
+									class="flex gap-5 justify-between px-4 py-4 bg-white rounded-lg border border-solid border-zinc-300 text-neutral-400"
+								>
+									<div class="self-start mt-4">__ __ ____</div>
+									<img
+										loading="lazy"
+										src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bb748e3e60efbe16fa258e7e3742fa52b2ad5e9464ffb10fd321a197e05be48?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+										class="aspect-square w-[21px]"
+									/>
+								</div>
+								<div class="grow my-auto text-neutral-800">-</div>
+							</div>
 						</div>
 					</div>
-					<div class="flex w-1/2 ml-10 border-red-600">
-						<img alt="supabase" src="supabase_white.svg" />
+					<div class="flex flex-col ml-5 w-[51%] max-md:ml-0 max-md:w-full">
+						<div class="flex flex-col grow text-base leading-6 max-md:mt-3.5 max-md:max-w-full">
+							<div
+								class="flex gap-2.5 self-end mr-16 font-medium whitespace-nowrap text-neutral-800 max-md:mr-2.5"
+							>
+								<div class="grow">Продолжительность</div>
+								<img
+									loading="lazy"
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/c72858772ed70045ab22847473ce52c2ac3174d11ab0d8f02091a9c3ec543c5c?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+									class="aspect-square w-[19px]"
+								/>
+							</div>
+							<div class="flex gap-5 justify-between mt-3 max-md:flex-wrap max-md:max-w-full">
+								<div
+									class="flex gap-5 justify-between px-4 py-4 font-medium bg-white rounded-lg border border-solid border-zinc-300 text-neutral-400"
+								>
+									<div class="self-start mt-4">__ __ ____</div>
+									<img
+										loading="lazy"
+										src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bb748e3e60efbe16fa258e7e3742fa52b2ad5e9464ffb10fd321a197e05be48?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+										class="aspect-square w-[21px]"
+									/>
+								</div>
+								<div
+									class="flex gap-5 justify-between px-4 py-4 whitespace-nowrap bg-white rounded-lg border border-solid border-zinc-300 text-neutral-800"
+								>
+									<div class="my-auto">Любая</div>
+									<img
+										loading="lazy"
+										src="https://cdn.builder.io/api/v1/image/assets/TEMP/351f176c49ecadd8b7b3b258a824c9fa9cf4100c71d0fafcdd4d2851a888179f?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+										class="w-5 aspect-square"
+									/>
+								</div>
+							</div>
+							<div
+								class="flex gap-2 self-center mt-2 ml-14 text-sm leading-7 whitespace-nowrap text-stone-500"
+							>
+								<img
+									loading="lazy"
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/c5c2d2444078e2f22451142f34cc060d7b98fe5fb355eaf649b5fce2571a6ce9?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+									class="aspect-square w-[19px]"
+								/>
+								<div class="grow self-start mt-2">Очистить</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col ml-5 w-[24%] max-md:ml-0 max-md:w-full">
+						<div class="flex flex-col grow text-base leading-6 text-neutral-800 max-md:mt-3.5">
+							<div class="flex gap-2.5 justify-between pr-2.5 font-medium">
+								<div class="flex-auto">Город отправления</div>
+								<img
+									loading="lazy"
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/c72858772ed70045ab22847473ce52c2ac3174d11ab0d8f02091a9c3ec543c5c?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+									class="aspect-square w-[19px]"
+								/>
+							</div>
+							<div
+								class="flex gap-5 justify-between px-4 py-4 mt-3 whitespace-nowrap bg-white rounded-lg border border-solid border-zinc-300"
+							>
+								<div class="my-auto">Любой</div>
+								<img
+									loading="lazy"
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/351f176c49ecadd8b7b3b258a824c9fa9cf4100c71d0fafcdd4d2851a888179f?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+									class="w-5 aspect-square"
+								/>
+							</div>
+							<div
+								class="flex gap-2 justify-between mt-2 text-sm leading-7 whitespace-nowrap text-stone-500"
+							>
+								<img
+									loading="lazy"
+									src="https://cdn.builder.io/api/v1/image/assets/TEMP/4481cab8e361d84e7182856cf2456967992e7a1a47d83825fb249fcc649e74fb?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+									class="aspect-square w-[19px]"
+								/>
+								<div class="flex-auto self-start mt-2">Очистить</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<h1 class="text-4xl font-bold">Агрегатор поиска круизов</h1>
+			</div>
+			<div
+				class="flex gap-5 justify-between mt-1.5 text-base leading-6 whitespace-nowrap max-md:flex-wrap max-md:max-w-full"
+			>
+				<div class="flex flex-col basis-0 text-neutral-800">
+					<div class="flex gap-2 justify-between pr-6 font-medium max-md:pr-5">
+						<div class="flex-auto my-auto">Теплоходы</div>
+						<img
+							loading="lazy"
+							src="https://cdn.builder.io/api/v1/image/assets/TEMP/c72858772ed70045ab22847473ce52c2ac3174d11ab0d8f02091a9c3ec543c5c?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+							class="aspect-square w-[19px]"
+						/>
+					</div>
+					<div
+						class="flex gap-5 justify-between px-4 py-4 mt-3 bg-white rounded-lg border border-solid border-zinc-300"
+					>
+						<div class="my-auto">Любой</div>
+						<img
+							loading="lazy"
+							src="https://cdn.builder.io/api/v1/image/assets/TEMP/25faf41d70be532a0962600a9a89340f9be2355ab622e02b89ce9ff751ea6b77?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+							class="w-5 aspect-square"
+						/>
+					</div>
+				</div>
+				<div class="flex flex-col flex-1 max-md:max-w-full">
+					<div class="flex gap-2.5 self-start font-medium text-neutral-800">
+						<div class="grow my-auto">Стоимость, Р</div>
+						<img
+							loading="lazy"
+							src="https://cdn.builder.io/api/v1/image/assets/TEMP/c72858772ed70045ab22847473ce52c2ac3174d11ab0d8f02091a9c3ec543c5c?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+							class="aspect-square w-[19px]"
+						/>
+					</div>
+					<div
+						class="flex gap-2 justify-between mt-3 text-neutral-400 max-md:flex-wrap max-md:max-w-full"
+					>
+						<div
+							class="justify-center items-start py-5 pr-16 pl-4 bg-white rounded-lg border border-solid border-zinc-300 max-md:pr-5"
+						>
+							От
+						</div>
+						<div class="my-auto font-medium text-neutral-800">-</div>
+						<div
+							class="justify-center items-start py-5 pr-16 pl-4 bg-white rounded-lg border border-solid border-zinc-300 max-md:pr-5"
+						>
+							До
+						</div>
+						<img
+							loading="lazy"
+							src="https://cdn.builder.io/api/v1/image/assets/TEMP/99f1d7d155bc8ca5ad4f00c377ebb5a5d67ec731097d0f36c40d4e45e75a08ec?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+							class="aspect-[4.76] w-[237px]"
+						/>
+						<div
+							class="flex gap-0.5 justify-between px-16 py-2.5 text-base font-medium leading-6 text-center text-white bg-red-600 rounded-lg max-md:px-5"
+						>
+							<img
+								loading="lazy"
+								src="https://cdn.builder.io/api/v1/image/assets/TEMP/8eb6c99c0d307a05ec2e6465394ad77eef3a1c2b0629aae88c0c59aa1b29db92?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+								class="aspect-square w-[30px]"
+							/>
+							<div class="grow self-start mt-2.5">Сбросить</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex gap-2 self-start mt-2 text-sm leading-7 whitespace-nowrap text-stone-500">
+				<img
+					loading="lazy"
+					src="https://cdn.builder.io/api/v1/image/assets/TEMP/3df48becdc0e8c7cdfc8dd141bf84744b012c76f7d55d94a2a1e9b2793d06e2a?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+					class="aspect-square w-[19px]"
+				/>
+				<div class="grow self-start mt-2">Очистить</div>
+			</div>
+			<div
+				class="flex gap-2 justify-between self-start mt-9 mb-3 text-base font-semibold leading-6 whitespace-nowrap"
+			>
+				<div class="grow text-sky-900">Дополнительные параметры</div>
+				<img
+					loading="lazy"
+					src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed80844fa46cf0e2960093f99fdde31fc865f3cfc50b841747d1bc98ec653fbf?apiKey=7ca0d91bf1964af9995c1639997fb641&"
+					class="aspect-square w-[17px]"
+				/>
+				<div class="grow text-red-600 underline">Задать вопрос</div>
 			</div>
 		</div>
 	</div>
+
 	<!--
 	<div class="mockup-window my-5 pb-10 bg-base-300">
 		<div class="prose mx-auto">
