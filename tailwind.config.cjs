@@ -13,26 +13,33 @@ const config = {
     ux: {
         // See customization docs
         themes: {
-            light: {
-                primary: colors['orange']['500'],
-                'primary-content': 'white',
-                secondary: colors['blue']['500'],
-                'surface-100': 'white',
-                'surface-200': colors['gray']['100'],
-                'surface-300': colors['gray']['300'],
-                'surface-content': colors['gray']['900'],
-                'color-scheme': 'light'
+
+            "light": {
+                "color-scheme": "light",
+                "primary": "hsl(28.9412 100% 50%)",
+                "secondary": "oklch(69.71% 0.329 342.55)",
+                "secondary-content": "oklch(98.71% 0.0106 342.55)",
+                "accent": "oklch(76.76% 0.184 183.61)",
+                "neutral": "#2B3440",
+                "neutral-content": "#D7DDE4",
+                "surface-100": "oklch(100% 0 0)",
+                "surface-200": "#F2F2F2",
+                "surface-300": "#E5E6E6",
+                "surface-content": "#1f2937"
             },
-            dark: {
-                primary: colors['orange']['500'],
-                'primary-content': 'white',
-                secondary: colors['blue']['500'],
-                'surface-100': colors['zinc']['800'],
-                'surface-200': colors['zinc']['900'],
-                'surface-300': colors['zinc']['950'],
-                'surface-content': colors['zinc']['100'],
-                'color-scheme': 'dark'
-            },
+            "dark": {
+                "color-scheme": "dark",
+                "primary": "oklch(65.69% 0.196 275.75)",
+                "secondary": "oklch(74.8% 0.26 342.55)",
+                "accent": "oklch(74.51% 0.167 183.61)",
+                "neutral": "#2a323c",
+                "neutral-content": "#A6ADBB",
+                "surface-100": "#1d232a",
+                "surface-200": "#191e24",
+                "surface-300": "#15191e",
+                "surface-content": "#A6ADBB"
+            }
+
         },
     },
 
@@ -48,7 +55,7 @@ const config = {
     ],
 
     daisyui: {
-        themes: ['light', 'dark', 'black', 'business']
+        themes: ['dark', 'light', 'black', 'business']
     }
 };
 
